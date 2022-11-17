@@ -1,0 +1,32 @@
+<mat-expansion-panel [expanded]="isExpanded">
+  <mat-expansion-panel-header
+    class="header"
+    [class.disabled-pointer]="hideToggle"
+  >
+    <mat-panel-title>
+      <span class="row">
+        <mat-icon class="column header-icon">account_circle</mat-icon>
+        <span class="column">
+          <span class="header-title-container">
+            <span class="header-title">{{ panelTitle }}</span>
+            <mat-icon *ngIf="titleInfoTooltip" [matTooltip]="titleInfoTooltip"
+              >info</mat-icon
+            >
+          </span>
+          <span class="header-subtitle">{{ panelSubTitle }}</span>
+        </span>
+      </span>
+    </mat-panel-title>
+    <button
+      *ngIf="displayButton"
+      mat-raised-button
+      color="primary"
+      (click)="onButtonClick($event)"
+      class="header-button"
+      [class.no-margin]="hideToggle"
+    >
+      {{ buttonText }}
+    </button>
+  </mat-expansion-panel-header>
+  <ng-content></ng-content>
+</mat-expansion-panel>
