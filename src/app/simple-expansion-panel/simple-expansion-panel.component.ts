@@ -6,7 +6,7 @@ import { Input, Output, Component, OnInit, EventEmitter } from '@angular/core';
 @Component({
   selector: 'udb-simple-expansion-panel[panelTitle]',
   templateUrl: 'simple-expansion-panel.component.html',
-  styleUrls: ['simple-expansion-panel.css'],
+  styleUrls: ['simple-expansion-panel.component.css'],
 })
 export class UdbSimpleExpansionPanel implements OnInit {
   @Input() isExpandable: boolean = false;
