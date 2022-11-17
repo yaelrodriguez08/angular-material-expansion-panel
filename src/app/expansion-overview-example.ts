@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { udbIconNames } from 'udb-icon.names';
 
 /**
  * @title Basic expansion panel
@@ -9,6 +10,10 @@ import { Component } from '@angular/core';
   styleUrls: ['expansion-overview-example.css'],
 })
 export class ExpansionOverviewExample {
+  get IconNames() {
+    return udbIconNames;
+  }
+
   buttonClick() {
     console.log('button was clicked from parent');
   }
