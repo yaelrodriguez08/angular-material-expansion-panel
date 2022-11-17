@@ -1,4 +1,8 @@
-<mat-expansion-panel [expanded]="isExpanded">
+<mat-expansion-panel
+  class="udb-simple-expansion-panel"
+  [expanded]="isExpanded"
+  [hideToggle]="hideToggle"
+>
   <mat-expansion-panel-header
     class="header"
     [class.disabled-pointer]="hideToggle"
@@ -9,11 +13,14 @@
         <span class="column">
           <span class="header-title-container">
             <span class="header-title">{{ panelTitle }}</span>
-            <mat-icon *ngIf="titleInfoTooltip" [matTooltip]="titleInfoTooltip"
+            <mat-icon
+              *ngIf="titleInfoTooltip"
+              class="header-title-tooltip"
+              [matTooltip]="titleInfoTooltip"
               >info</mat-icon
             >
           </span>
-          <span class="header-subtitle">{{ panelSubTitle }}</span>
+          <span class="header-subtitle">{{ panelSubtitle }}</span>
         </span>
       </span>
     </mat-panel-title>
