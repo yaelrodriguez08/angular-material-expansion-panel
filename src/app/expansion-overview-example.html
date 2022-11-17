@@ -1,13 +1,11 @@
 <udb-simple-expansion-panel
+  headerIcon="bag-hand"
   panelTitle="Brokerage Cash"
-  titleInfoTooltip="Tooltip!"
   panelSubtitle="$5,000.00"
+  titleInfoTooltip="Example tooltip"
   buttonText="Add Funds"
-></udb-simple-expansion-panel>
-
-<udb-simple-expansion-panel
-  panelTitle="Buying Power"
-  titleInfoTooltip="Tooltip!"
-  panelSubtitle="$5,000.00"
-  buttonText="Add Funds"
-></udb-simple-expansion-panel>
+  [isExpandable]="true"
+  [isExpanded]="true"
+>
+  This should be the content shown when the panel is expanded
+</udb-simple-expansion-panel>

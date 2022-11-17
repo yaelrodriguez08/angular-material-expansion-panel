@@ -9,7 +9,7 @@
   >
     <mat-panel-title>
       <span class="row">
-        <mat-icon class="column header-icon">account_circle</mat-icon>
+        <mat-icon class="column header-icon" [svgIcon]="headerIcon"></mat-icon>
         <span class="column">
           <span class="header-title-container">
             <span class="header-title">{{ panelTitle }}</span>
@@ -17,8 +17,8 @@
               *ngIf="titleInfoTooltip"
               class="header-title-tooltip"
               [matTooltip]="titleInfoTooltip"
-              >info</mat-icon
-            >
+              [svgIcon]="titleInfoIcon"
+            ></mat-icon>
           </span>
           <span class="header-subtitle">{{ panelSubtitle }}</span>
         </span>

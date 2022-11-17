@@ -4,16 +4,18 @@ import { Input, Output, Component, OnInit, EventEmitter } from '@angular/core';
  * @title Basic expansion panel
  */
 @Component({
-  selector: 'udb-simple-expansion-panel[panelTitle]',
+  selector: 'udb-simple-expansion-panel[headerIcon][panelTitle]',
   templateUrl: 'simple-expansion-panel.component.html',
   styleUrls: ['simple-expansion-panel.component.css'],
 })
 export class UdbSimpleExpansionPanel implements OnInit {
   @Input() isExpandable: boolean = true;
   @Input() isExpanded: boolean = false;
+  @Input() headerIcon: string;
   @Input() panelTitle: string;
   @Input() panelSubtitle: string;
 
+  @Input() titleInfoIcon: string = 'info-circle';
   @Input() titleInfoTooltip: string | undefined = undefined;
   @Input() buttonText: string | undefined = undefined;
 
@@ -24,6 +26,9 @@ export class UdbSimpleExpansionPanel implements OnInit {
   displayTooltip: boolean;
 
   ngOnInit(): void {
+    if (!this.headerIcon) {
+      throw new TypeError('headerIcon is required');
+    }
     if (!this.panelTitle) {
       throw new TypeError('panelTitle is required');
     }

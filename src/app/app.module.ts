@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { HttpClientModule } from '@angular/common/http';
 import { UdbSimpleExpansionPanel } from './simple-expansion-panel/simple-expansion-panel.component';
+import { MaterialIconsRegistryModule } from 'src/material-icons.module';
 
 @NgModule({
   declarations: [ExpansionOverviewExample, UdbSimpleExpansionPanel],
@@ -19,6 +20,7 @@ import { UdbSimpleExpansionPanel } from './simple-expansion-panel/simple-expansi
     MatNativeDateModule,
     MaterialExampleModule,
     ReactiveFormsModule,
+    MaterialIconsRegistryModule,
   ],
   providers: [],
   bootstrap: [ExpansionOverviewExample],

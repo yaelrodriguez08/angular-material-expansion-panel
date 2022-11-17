@@ -18,6 +18,8 @@
 
 .mat-expansion-panel-header .header-icon {
   margin-right: 16px;
+  width: 40px;
+  height: 40px;
 }
 
 .mat-expansion-panel-header .header-title-container {
@@ -35,6 +37,8 @@
 
 .mat-expansion-panel-header .header-title-tooltip {
   pointer-events: initial;
+  width: 24px;
+  height: 24px;
 }
 
 .mat-expansion-panel-header .header-subtitle {
