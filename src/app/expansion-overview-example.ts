@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { UdbExpansionPanelItem } from './accordion/models';
 
 /**
  * @title Basic expansion panel
@@ -10,12 +9,6 @@ import { UdbExpansionPanelItem } from './accordion/models';
   styleUrls: ['expansion-overview-example.css'],
 })
 export class ExpansionOverviewExample {
-  panelItems: UdbExpansionPanelItem[] = [
-    new UdbExpansionPanelItem('Buying Power'),
-    new UdbExpansionPanelItem('Another item'),
-    new UdbExpansionPanelItem('Brokerage Cash'),
-  ];
-
   buttonClick() {
     console.log('button was clicked from parent');
   }

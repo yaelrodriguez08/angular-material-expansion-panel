@@ -8,7 +8,7 @@ import { Input, Output, Component, OnInit, EventEmitter } from '@angular/core';
   templateUrl: 'simple-expansion-panel.component.html',
   styleUrls: ['simple-expansion-panel.css'],
 })
-export class UdbAccordion implements OnInit {
+export class UdbSimpleExpansionPanel implements OnInit {
   @Input() isExpandable: boolean = false;
   @Input() isExpanded: boolean = false;
   @Input() panelTitle: string;

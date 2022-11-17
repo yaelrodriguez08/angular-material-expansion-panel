@@ -7,10 +7,10 @@ import { ExpansionOverviewExample } from './expansion-overview-example';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { HttpClientModule } from '@angular/common/http';
-import { UdbAccordion } from './simple-expansion-panel/simple-expansion-panel.component';
+import { UdbSimpleExpansionPanel } from './simple-expansion-panel/simple-expansion-panel.component';
 
 @NgModule({
-  declarations: [ExpansionOverviewExample, UdbAccordion],
+  declarations: [ExpansionOverviewExample, UdbSimpleExpansionPanel],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
