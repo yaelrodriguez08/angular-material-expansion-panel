@@ -1,0 +1,66 @@
+.mat-accordion .mat-expansion-panel:first-of-type {
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+
+.mat-accordion .mat-expansion-panel:last-of-type {
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.mat-expansion-panel-header {
+  padding: 16px 24px 16px 16px;
+}
+
+.mat-expansion-panel-header .header-icon {
+  margin-right: 16px;
+}
+
+.mat-expansion-panel-header .header-title-container {
+  display: flex;
+  align-items: center;
+}
+
+.mat-expansion-panel-header .header-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #333d46;
+  margin-right: 4px;
+}
+
+.mat-expansion-panel-header .header-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4a5560;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-button {
+  min-width: 172px;
+  max-height: 48px;
+  background-color: #2f5b88;
+  margin-right: 16px;
+  pointer-events: all;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.disabled-pointer {
+  pointer-events: none;
+}
